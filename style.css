@@ -1,0 +1,40 @@
+img {
+    width: 20px;
+    height: 15px;
+}
+input {
+    width: 20px;
+    height: 15px;
+}
+#primeiro {
+    background: #CCF9CC;
+}
+#segundo {
+    background: #CCF9CC;
+}
+#terceiro {
+    background: #CCF9ff;
+}
+#quarto {
+    background-color: transparent;
+}
+#title {
+    background: #eaecf0;
+}
+.poss {
+    text-align: center;
+    width: 26px;
+    height: 21px;
+}
+#time1a_nome_nome, #time1b_nome_nome, #time1c_nome_nome, #time1d_nome_nome, #time1e_nome_nome, #time1f_nome_nome, #time1g_nome_nome, #time1h_nome_nome,
+#time2a_nome_nome, #time2b_nome_nome, #time2c_nome_nome, #time2d_nome_nome, #time2e_nome_nome, #time2f_nome_nome, #time2g_nome_nome, #time2h_nome_nome,
+#time3a_nome_nome, #time3b_nome_nome, #time3c_nome_nome, #time3d_nome_nome, #time3e_nome_nome, #time3f_nome_nome, #time3g_nome_nome, #time3h_nome_nome,
+#time4a_nome_nome, #time4b_nome_nome, #time4c_nome_nome, #time4d_nome_nome, #time4e_nome_nome, #time4f_nome_nome, #time4g_nome_nome, #time4h_nome_nome{
+    width: 205px;
+    text-align:left;
+}
+td {
+    width: 40px;
+    height: 29px;
+    text-align: center;
+}

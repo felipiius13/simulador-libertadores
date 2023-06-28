@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador da libertadores | Felipe Luiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grupos">
+        <h3>GRUPO A</h3>
+        <div class="grupo_a">
+            <table id="grupo_a_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1a_nome_nome"><img id="time1a_img"><span id="time1a_nome"></span></td>
+                    <td id="time1a_P"></td>
+                    <td id="time1a_J"></td>
+                    <td id="time1a_V"></td>
+                    <td id="time1a_E"></td>
+                    <td id="time1a_D"></td>
+                    <td id="time1a_S"></td>
+                    <td id="time1a_GP"></td>
+                    <td id="time1a_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2a_nome_nome"><img id="time2a_img"><span id="time2a_nome"></span></td>
+                    <td id="time2a_P"></td>
+                    <td id="time2a_J"></td>
+                    <td id="time2a_V"></td>
+                    <td id="time2a_E"></td>
+                    <td id="time2a_D"></td>
+                    <td id="time2a_S"></td>
+                    <td id="time2a_GP"></td>
+                    <td id="time2a_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3a_nome_nome"><img id="time3a_img"><span id="time3a_nome"></span></td>
+                    <td id="time3a_P"></td>
+                    <td id="time3a_J"></td>
+                    <td id="time3a_V"></td>
+                    <td id="time3a_E"></td>
+                    <td id="time3a_D"></td>
+                    <td id="time3a_S"></td>
+                    <td id="time3a_GP"></td>
+                    <td id="time3a_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4a_nome_nome"><img id="time4a_img"><span id="time4a_nome"></span></td>
+                    <td id="time4a_P"></td>
+                    <td id="time4a_J"></td>
+                    <td id="time4a_V"></td>
+                    <td id="time4a_E"></td>
+                    <td id="time4a_D"></td>
+                    <td id="time4a_S"></td>
+                    <td id="time4a_GP"></td>
+                    <td id="time4a_GC"></td>
+                </tr>
+            </table>
+        </div>
+        <h3>GRUPO B</h3>
+        <div class="grupo_b">
+            <table id="grupo_b_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1b_nome_nome"><img id="time1b_img"><span id="time1b_nome"></span></td>
+                    <td id="time1b_P"></td>
+                    <td id="time1b_J"></td>
+                    <td id="time1b_V"></td>
+                    <td id="time1b_E"></td>
+                    <td id="time1b_D"></td>
+                    <td id="time1b_S"></td>
+                    <td id="time1b_GP"></td>
+                    <td id="time1b_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2b_nome_nome"><img id="time2b_img"><span id="time2b_nome"></span></td>
+                    <td id="time2b_P"></td>
+                    <td id="time2b_J"></td>
+                    <td id="time2b_V"></td>
+                    <td id="time2b_E"></td>
+                    <td id="time2b_D"></td>
+                    <td id="time2b_S"></td>
+                    <td id="time2b_GP"></td>
+                    <td id="time2b_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3b_nome_nome"><img id="time3b_img"><span id="time3b_nome"></span></td>
+                    <td id="time3b_P"></td>
+                    <td id="time3b_J"></td>
+                    <td id="time3b_V"></td>
+                    <td id="time3b_E"></td>
+                    <td id="time3b_D"></td>
+                    <td id="time3b_S"></td>
+                    <td id="time3b_GP"></td>
+                    <td id="time3b_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4b_nome_nome"><img id="time4b_img"><span id="time4b_nome"></span></td>
+                    <td id="time4b_P"></td>
+                    <td id="time4b_J"></td>
+                    <td id="time4b_V"></td>
+                    <td id="time4b_E"></td>
+                    <td id="time4b_D"></td>
+                    <td id="time4b_S"></td>
+                    <td id="time4b_GP"></td>
+                    <td id="time4b_GC"></td>
+                </tr>
+            </table>
+        </div>
+        <h3>GRUPO C</h3>
+        <div class="grupo_c">
+            <table id="grupo_c_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1c_nome_nome"><img id="time1c_img"><span id="time1c_nome"></span></td>
+                    <td id="time1c_P"></td>
+                    <td id="time1c_J"></td>
+                    <td id="time1c_V"></td>
+                    <td id="time1c_E"></td>
+                    <td id="time1c_D"></td>
+                    <td id="time1c_S"></td>
+                    <td id="time1c_GP"></td>
+                    <td id="time1c_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2c_nome_nome"><img id="time2c_img"><span id="time2c_nome"></span></td>
+                    <td id="time2c_P"></td>
+                    <td id="time2c_J"></td>
+                    <td id="time2c_V"></td>
+                    <td id="time2c_E"></td>
+                    <td id="time2c_D"></td>
+                    <td id="time2c_S"></td>
+                    <td id="time2c_GP"></td>
+                    <td id="time2c_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3c_nome_nome"><img id="time3c_img"><span id="time3c_nome"></span></td>
+                    <td id="time3c_P"></td>
+                    <td id="time3c_J"></td>
+                    <td id="time3c_V"></td>
+                    <td id="time3c_E"></td>
+                    <td id="time3c_D"></td>
+                    <td id="time3c_S"></td>
+                    <td id="time3c_GP"></td>
+                    <td id="time3c_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4c_nome_nome"><img id="time4c_img"><span id="time4c_nome"></span></td>
+                    <td id="time4c_P"></td>
+                    <td id="time4c_J"></td>
+                    <td id="time4c_V"></td>
+                    <td id="time4c_E"></td>
+                    <td id="time4c_D"></td>
+                    <td id="time4c_S"></td>
+                    <td id="time4c_GP"></td>
+                    <td id="time4c_GC"></td>
+                </tr>
+            </table>
+        </div>
+        <h3>GRUPO D</h3>
+        <div class="grupo_d">
+            <table id="grupo_d_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1d_nome_nome"><img id="time1d_img"><span id="time1d_nome"></span></td>
+                    <td id="time1d_P"></td>
+                    <td id="time1d_J"></td>
+                    <td id="time1d_V"></td>
+                    <td id="time1d_E"></td>
+                    <td id="time1d_D"></td>
+                    <td id="time1d_S"></td>
+                    <td id="time1d_GP"></td>
+                    <td id="time1d_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2d_nome_nome"><img id="time2d_img"><span id="time2d_nome"></span></td>
+                    <td id="time2d_P"></td>
+                    <td id="time2d_J"></td>
+                    <td id="time2d_V"></td>
+                    <td id="time2d_E"></td>
+                    <td id="time2d_D"></td>
+                    <td id="time2d_S"></td>
+                    <td id="time2d_GP"></td>
+                    <td id="time2d_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3d_nome_nome"><img id="time3d_img"><span id="time3d_nome"></span></td>
+                    <td id="time3d_P"></td>
+                    <td id="time3d_J"></td>
+                    <td id="time3d_V"></td>
+                    <td id="time3d_E"></td>
+                    <td id="time3d_D"></td>
+                    <td id="time3d_S"></td>
+                    <td id="time3d_GP"></td>
+                    <td id="time3d_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4d_nome_nome"><img id="time4d_img"><span id="time4d_nome"></span></td>
+                    <td id="time4d_P"></td>
+                    <td id="time4d_J"></td>
+                    <td id="time4d_V"></td>
+                    <td id="time4d_E"></td>
+                    <td id="time4d_D"></td>
+                    <td id="time4d_S"></td>
+                    <td id="time4d_GP"></td>
+                    <td id="time4d_GC"></td>
+                </tr>
+            </table>
+        </div>
+        <h3>GRUPO E</h3>
+        <div class="grupo_e">
+            <table id="grupo_e_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1e_nome_nome"><img id="time1e_img"><span id="time1e_nome"></span></td>
+                    <td id="time1e_P"></td>
+                    <td id="time1e_J"></td>
+                    <td id="time1e_V"></td>
+                    <td id="time1e_E"></td>
+                    <td id="time1e_D"></td>
+                    <td id="time1e_S"></td>
+                    <td id="time1e_GP"></td>
+                    <td id="time1e_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2e_nome_nome"><img id="time2e_img"><span id="time2e_nome"></span></td>
+                    <td id="time2e_P"></td>
+                    <td id="time2e_J"></td>
+                    <td id="time2e_V"></td>
+                    <td id="time2e_E"></td>
+                    <td id="time2e_D"></td>
+                    <td id="time2e_S"></td>
+                    <td id="time2e_GP"></td>
+                    <td id="time2e_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3e_nome_nome"><img id="time3e_img"><span id="time3e_nome"></span></td>
+                    <td id="time3e_P"></td>
+                    <td id="time3e_J"></td>
+                    <td id="time3e_V"></td>
+                    <td id="time3e_E"></td>
+                    <td id="time3e_D"></td>
+                    <td id="time3e_S"></td>
+                    <td id="time3e_GP"></td>
+                    <td id="time3e_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4e_nome_nome"><img id="time4e_img"><span id="time4e_nome"></span></td>
+                    <td id="time4e_P"></td>
+                    <td id="time4e_J"></td>
+                    <td id="time4e_V"></td>
+                    <td id="time4e_E"></td>
+                    <td id="time4e_D"></td>
+                    <td id="time4e_S"></td>
+                    <td id="time4e_GP"></td>
+                    <td id="time4e_GC"></td>
+                </tr>
+            </table>
+        </div>
+        <h3>GRUPO F</h3>
+        <div class="grupo_f">
+            <table id="grupo_f_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1f_nome_nome"><img id="time1f_img"><span id="time1f_nome"></span></td>
+                    <td id="time1f_P"></td>
+                    <td id="time1f_J"></td>
+                    <td id="time1f_V"></td>
+                    <td id="time1f_E"></td>
+                    <td id="time1f_D"></td>
+                    <td id="time1f_S"></td>
+                    <td id="time1f_GP"></td>
+                    <td id="time1f_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2f_nome_nome"><img id="time2f_img"><span id="time2f_nome"></span></td>
+                    <td id="time2f_P"></td>
+                    <td id="time2f_J"></td>
+                    <td id="time2f_V"></td>
+                    <td id="time2f_E"></td>
+                    <td id="time2f_D"></td>
+                    <td id="time2f_S"></td>
+                    <td id="time2f_GP"></td>
+                    <td id="time2f_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3f_nome_nome"><img id="time3f_img"><span id="time3f_nome"></span></td>
+                    <td id="time3f_P"></td>
+                    <td id="time3f_J"></td>
+                    <td id="time3f_V"></td>
+                    <td id="time3f_E"></td>
+                    <td id="time3f_D"></td>
+                    <td id="time3f_S"></td>
+                    <td id="time3f_GP"></td>
+                    <td id="time3f_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4f_nome_nome"><img id="time4f_img"><span id="time4f_nome"></span></td>
+                    <td id="time4f_P"></td>
+                    <td id="time4f_J"></td>
+                    <td id="time4f_V"></td>
+                    <td id="time4f_E"></td>
+                    <td id="time4f_D"></td>
+                    <td id="time4f_S"></td>
+                    <td id="time4f_GP"></td>
+                    <td id="time4f_GC"></td>
+                </tr>
+            </table>
+        </div>
+        <h3>GRUPO G</h3>
+        <div class="grupo_g">
+            <table id="grupo_g_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1g_nome_nome"><img id="time1g_img"><span id="time1g_nome"></span></td>
+                    <td id="time1g_P"></td>
+                    <td id="time1g_J"></td>
+                    <td id="time1g_V"></td>
+                    <td id="time1g_E"></td>
+                    <td id="time1g_D"></td>
+                    <td id="time1g_S"></td>
+                    <td id="time1g_GP"></td>
+                    <td id="time1g_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2g_nome_nome"><img id="time2g_img"><span id="time2g_nome"></span></td>
+                    <td id="time2g_P"></td>
+                    <td id="time2g_J"></td>
+                    <td id="time2g_V"></td>
+                    <td id="time2g_E"></td>
+                    <td id="time2g_D"></td>
+                    <td id="time2g_S"></td>
+                    <td id="time2g_GP"></td>
+                    <td id="time2g_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3g_nome_nome"><img id="time3g_img"><span id="time3g_nome"></span></td>
+                    <td id="time3g_P"></td>
+                    <td id="time3g_J"></td>
+                    <td id="time3g_V"></td>
+                    <td id="time3g_E"></td>
+                    <td id="time3g_D"></td>
+                    <td id="time3g_S"></td>
+                    <td id="time3g_GP"></td>
+                    <td id="time3g_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4g_nome_nome"><img id="time4g_img"><span id="time4g_nome"></span></td>
+                    <td id="time4g_P"></td>
+                    <td id="time4g_J"></td>
+                    <td id="time4g_V"></td>
+                    <td id="time4g_E"></td>
+                    <td id="time4g_D"></td>
+                    <td id="time4g_S"></td>
+                    <td id="time4g_GP"></td>
+                    <td id="time4g_GC"></td>
+                </tr>
+            </table>
+        </div>
+        <h3>GRUPO H</h3>
+        <div class="grupo_h">
+            <table id="grupo_h_table">
+                <tr id="title">
+                    <th>Pos</th>
+                    <th>Equipes</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>S</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                </tr>
+                <tr id="primeiro">
+                    <td class="poss">1</td>
+                    <td id="time1h_nome_nome"><img id="time1h_img"><span id="time1h_nome"></span></td>
+                    <td id="time1h_P"></td>
+                    <td id="time1h_J"></td>
+                    <td id="time1h_V"></td>
+                    <td id="time1h_E"></td>
+                    <td id="time1h_D"></td>
+                    <td id="time1h_S"></td>
+                    <td id="time1h_GP"></td>
+                    <td id="time1h_GC"></td>
+                </tr>
+                <tr id="segundo">
+                    <td class="poss">2</td>
+                    <td id="time2h_nome_nome"><img id="time2h_img"><span id="time2h_nome"></span></td>
+                    <td id="time2h_P"></td>
+                    <td id="time2h_J"></td>
+                    <td id="time2h_V"></td>
+                    <td id="time2h_E"></td>
+                    <td id="time2h_D"></td>
+                    <td id="time2h_S"></td>
+                    <td id="time2h_GP"></td>
+                    <td id="time2h_GC"></td>
+                </tr>
+                <tr id="terceiro">
+                    <td class="poss">3</td>
+                    <td id="time3h_nome_nome"><img id="time3h_img"><span id="time3h_nome"></span></td>
+                    <td id="time3h_P"></td>
+                    <td id="time3h_J"></td>
+                    <td id="time3h_V"></td>
+                    <td id="time3h_E"></td>
+                    <td id="time3h_D"></td>
+                    <td id="time3h_S"></td>
+                    <td id="time3h_GP"></td>
+                    <td id="time3h_GC"></td>
+                </tr>
+                <tr id="quarto">
+                    <td class="poss">4</td>
+                    <td id="time4h_nome_nome"><img id="time4h_img"><span id="time4h_nome"></span></td>
+                    <td id="time4h_P"></td>
+                    <td id="time4h_J"></td>
+                    <td id="time4h_V"></td>
+                    <td id="time4h_E"></td>
+                    <td id="time4h_D"></td>
+                    <td id="time4h_S"></td>
+                    <td id="time4h_GP"></td>
+                    <td id="time4h_GC"></td>
+                </tr>
+            </table>
+        </div>                    
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

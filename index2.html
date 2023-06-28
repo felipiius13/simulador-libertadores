@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Setinhas de Navegação</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="item"></div>
+  </div>
+
+  <script>
+    var itens = ["Item 1", "Item 2", "Item 3", "Item 4"];
+    var currentIndex = 0;
+    var itemDiv = document.getElementById("item");
+
+    // Função para atualizar o conteúdo exibido
+    function exibirItem() {
+      var itemAtual = itens[currentIndex];
+      itemDiv.innerText = itemAtual;
+    }
+
+    // Função para lidar com o evento de teclado
+    function handleKeyPress(event) {
+      if (event.keyCode === 39) { // Tecla de seta para a direita
+        currentIndex = (currentIndex + 1) % itens.length;
+        exibirItem();
+      }
+    }
+
+    // Adiciona o ouvinte de evento de teclado
+    document.addEventListener("keydown", handleKeyPress);
+
+    // Exibe o primeiro item inicialmente
+    exibirItem();
+  </script>
+</body>
+</html>
